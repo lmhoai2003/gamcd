@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab1: {fileID: 3599029593847423852, guid: 3c459326661b5284db80c1b40b9dcc1f, type: 3}
-  playerPrefab2: {fileID: 3599029593847423852, guid: 3c459326661b5284db80c1b40b9dcc1f, type: 3}
+  playerPrefab2: {fileID: 3599029593847423852, guid: f9aecf301f32c35448dc57c5fa059f38, type: 3}
 --- !u!114 &1425218158
 MonoBehaviour:
   m_ObjectHideFlags: 0
