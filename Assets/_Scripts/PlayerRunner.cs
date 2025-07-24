@@ -19,7 +19,8 @@ public class PlayerRunner : SimulationBehaviour, IPlayerJoined
         {
             // Ví dụ: Lấy lựa chọn nhân vật từ PlayerPrefs (giả định đã lưu trước đó)
             // 0 = nhân vật 1, 1 = nhân vật 2
-            int selectedCharacterIndex = PlayerPrefs.GetInt("player", 0);
+            // int selectedCharacterIndex = PlayerPrefs.GetInt("player", 0);
+            int selectedCharacterIndex = 1;
 
             GameObject selectedPrefab = selectedCharacterIndex == 1 ? playerPrefab2 : playerPrefab1;
 
@@ -33,9 +34,11 @@ public class PlayerRunner : SimulationBehaviour, IPlayerJoined
                 var playerSetup = obj.GetComponent<PlayerSetup>();
                 if (playerSetup != null)
                 {
-                    playerSetup.SetupCamera(); 
+                    playerSetup.SetupCamera();
                 }
             });
+            
+            Debug.Log("tao ra plsyer");
 
         }
     }
