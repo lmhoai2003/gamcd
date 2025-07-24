@@ -1,5 +1,6 @@
 using UnityEngine;
 using Fusion;
+using ExitGames.Client.Photon.StructWrapping;
 
 public class PlayerRunner : SimulationBehaviour, IPlayerJoined
 {
@@ -19,8 +20,8 @@ public class PlayerRunner : SimulationBehaviour, IPlayerJoined
         {
             // Ví dụ: Lấy lựa chọn nhân vật từ PlayerPrefs (giả định đã lưu trước đó)
             // 0 = nhân vật 1, 1 = nhân vật 2
-            // int selectedCharacterIndex = PlayerPrefs.GetInt("player", 0);
-            int selectedCharacterIndex = 1;
+            int selectedCharacterIndex = PlayerPrefs.GetInt("player", 0);
+            // int selectedCharacterIndex = 0;
 
             GameObject selectedPrefab = selectedCharacterIndex == 1 ? playerPrefab2 : playerPrefab1;
 
@@ -35,7 +36,9 @@ public class PlayerRunner : SimulationBehaviour, IPlayerJoined
                 if (playerSetup != null)
                 {
                     playerSetup.SetupCamera();
+                    
                 }
+                
             });
             
             Debug.Log("tao ra plsyer");

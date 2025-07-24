@@ -6,7 +6,7 @@ public class CameraFollowScript : MonoBehaviour
     public CinemachineCamera FollowCamera;
     private bool checkCam1 = true;
     
-    [SerializeField] private float viewCamera = 60f;
+    [SerializeField] private float viewCamera = 80f;
 
 
     public void AssignCamera(Transform target)
